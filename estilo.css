@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+
+.krona-one-regular {
+    font-family: "Krona One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: black;
+    font-family: Georgia, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+h1 {
+    color: #D25DA8;
+    text-align: center;
+}
+.texto p {
+    color: white;
+    text-align: left;
+    margin: 30px 0;
+}
+main {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+    height: 100vh;
+    text-align: center;
+    padding: 20px;
+}
+a {
+    color: white;
+    background-color: rgba(199, 78, 163, 0.9);
+    padding: 12px 35px;
+    border-radius: 3px;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
+    margin-right: 20px;
+    transition: all 0.3s ease;
+    
+}
+a:hover {
+    background-color:  #ff66cc;
+    transform: scale(1.1);
+    text-decoration: underline;
+}
+strong {
+    color: rgb(202, 65, 202);
+}
+.sobre {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: rgba(146, 107, 122, 0.411);
+    border-radius: 10px;
+    width: 100%;
+    text-align: center;
+    line-height: 1.5;
+}
+img {
+    width: 100%;
+    max-width: 550px;
+    height: 500px;
+    border-radius: 8px;
+    margin-right: 20px;
+    margin-top: 60px;
+    margin: 20px;
+    border: 3px solid #555555;
+    box-shadow: 0 4px 10px rgba(233, 10, 122, 0.795);
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.texto {
+    margin-right: 20px;
+}
+.contato {
+    margin: 20px 0;
+    padding: 30px;
+    background-color: rgba(146, 107, 122, 0.411);
+    border-radius: 10px;
+    text-align: center;
+    line-height: 1.6;
+}
+.contato p {
+    font-size: 1.1rem;
+    color: white;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(146, 107, 122, 0.411);
+}
+header .login a {
+    color: white;
+    background-color: rgba(199, 78, 163, 0.9);
+    padding: 12px 35px;
+    border-radius: 3px;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
+    margin-right: 20px;
+    transition: all 0.3s ease;
+}
+header .login a:hover {
+    background-color: #ff66cc;
+    transform: scale(1.1);
+}
+footer {
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    color: rgb(184, 38, 118);
+    text-align: center;
+    padding: 20px;
+    background-color: #d9b7d7;
+    margin: 20px;
+}
+git init
