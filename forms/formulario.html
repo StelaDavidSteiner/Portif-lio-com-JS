@@ -10,40 +10,41 @@
     <table class="estrutura_inicial">
         <tr class="estrutura_linha">
             <td class="estrutura_form">
-                <form id="formulario" action="">
-                    <label for="nome" class="estrutura_lab">nome</label>
-                    <input type="text" name="nome" id="nome">
-                    <label for="email">E-mail</label>
+                <form id="formulario" action="enviar()" method="post"> 
+                    <label for="nome" class="estrutura_lab">Nome:</label>
+                    <input type="text" name="nome" id="Nome">
+                    <label for="email">E-mail:</label>
                     <input type="text" name="email" id="email">
-                    <label for="fone"> fone de contato</label>
+                    <label for="fone"> Telefone de contato:</label>
                     <input type="text" name="fone" id="fone">
-                    <label for="mensagem">Escreva sua mensagem</label>
+                    <label for="mensagem">Escreva sua mensagem:</label>
                     <input type="text" name="mensagem" id="mensagem">
-                    <label for="data_cadastro">Data de Cadastro</label>
-                    <input type="text" name="data_cadastro" id="data_cadastro">
-                    <label for="nome">Tipo de contato</label>
+                    <label for="data_cadastro">Data de Cadastro:</label>
+                    <input type="data" name="data_cadastro" id="data_cadastro">
+                    <label for="nome">Tipo de contato:</label>
                     <input type="text" name="tipo_contato" id="tipo_contato">
+
+                    <button type="submit" id="enviar" type="submit">Enviar</button>
+                    <button type="reset" id="limpar" type="reset">Limpar</button>  
                 </form>
             </td>
             <td class="estrutura_grid">
                 <table id="grid">
-                    <tr id="grid_linha">
-                        <td id="g_nome">nome</td>
-                        <td id="g_email">email</td>
-                        <td id="g_fone">fone</td>
-                        <td id="g_mensagem">mensagem</td>
-                        <td id="g_data_cadastro">data_cadastro</td>
-                        <td id="g_tipo_contato">tipo_contato</td>
-                    </tr>
+                    <thead>
+                        <tr id="grid_linha">
+                            <th id="g_nome">Nome</th>
+                            <th id="g_email">E-mail</th>
+                            <th id="g_fone">Telefone</th>
+                            <th id="g_mensagem">Mensagem</th>
+                            <th id="g_data_cadastro">Data_Cadastro</th>
+                            <th id="g_tipo_contato">Tipo_Contato</th>
+                        </tr>
+                    </thead>
                 </table>
             </td>
         </tr>
     </table>      
-    <button id="enviar">enviar</button>
-    <button id="limpar">limpar</button>      
+
 </body>
-<script>
-    var alerta = "Estou logo te avisando"
-    alert("mensagem de aviso: "+alerta)
-</script>
+<script type="javascript" href="fomulario.js"></script>
 </html>
