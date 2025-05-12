@@ -4,47 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
-    <link rel="stylesheet" href="formulario.css">
+    <link rel="stylesheet" href="./formulario.css">
 </head>
 <body>
     <table class="estrutura_inicial">
         <tr class="estrutura_linha">
             <td class="estrutura_form">
-                <form id="formulario" action="enviar()" method="post"> 
-                    <label for="nome" class="estrutura_lab">Nome:</label>
-                    <input type="text" name="nome" id="Nome">
-                    <label for="email">E-mail:</label>
-                    <input type="text" name="email" id="email">
-                    <label for="fone"> Telefone de contato:</label>
-                    <input type="text" name="fone" id="fone">
-                    <label for="mensagem">Escreva sua mensagem:</label>
-                    <input type="text" name="mensagem" id="mensagem">
-                    <label for="data_cadastro">Data de Cadastro:</label>
-                    <input type="data" name="data_cadastro" id="data_cadastro">
-                    <label for="nome">Tipo de contato:</label>
-                    <input type="text" name="tipo_contato" id="tipo_contato">
-
-                    <button type="submit" id="enviar" type="submit">Enviar</button>
-                    <button type="reset" id="limpar" type="reset">Limpar</button>  
+                <form method="post" onsubmit="submeter()">
+                    <div> 
+                        <label for="nome" class="estrutura_lab">Nome:</label>
+                        <input type="text" name="nome" id="Nome">
+                    </div>
+                    <div>
+                        <label for="email">E-mail:</label>
+                        <input type="text" name="email" id="email">
+                    </div>
+                    <div>
+                        <label for="fone"> Telefone de contato:</label>
+                        <input type="text" name="fone" id="fone">
+                    </div>
+                    <div>
+                        <label for="mensagem">Escreva sua mensagem:</label>
+                        <input type="text" name="mensagem" id="mensagem">
+                    </div>
+                    <div>    
+                        <label for="data_cadastro">Data de Cadastro:</label>
+                        <input type="data" name="data_cadastro" id="data_cadastro">
+                    </div>
+                    <div>
+                        <label for="nome">Tipo de contato:</label>
+                        <input type="text" name="tipo_contato" id="tipo_contato">
+                    </div>
+                    <div>
+                        <button type="submit" id="enviar">Enviar</button>
+                        <button type="reset" id="limpar">Limpar</button>  
+                    </div>
                 </form>
             </td>
             <td class="estrutura_grid">
                 <table id="grid">
                     <thead>
-                        <tr id="grid_linha">
-                            <th id="g_nome">Nome</th>
-                            <th id="g_email">E-mail</th>
-                            <th id="g_fone">Telefone</th>
-                            <th id="g_mensagem">Mensagem</th>
-                            <th id="g_data_cadastro">Data_Cadastro</th>
-                            <th id="g_tipo_contato">Tipo_Contato</th>
+                        <tr id="head_linha">
+                            <th id="h_nome">Nome</th>
+                            <th id="h_email">E-mail</th>
+                            <th id="h_fone">Telefone</th>
+                            <th id="h_mensagem">Mensagem</th>
+                            <th id="h_data_cadastro">Data_Cadastro</th>
+                            <th id="h_tipo_contato">Tipo_Contato</th>
                         </tr>
                     </thead>
                 </table>
             </td>
         </tr>
     </table>      
-
+    <script src="formulario.js"></script>
 </body>
-<script type="javascript" href="fomulario.js"></script>
 </html>
