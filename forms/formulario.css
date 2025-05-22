@@ -63,6 +63,10 @@ form input {
     overflow: hidden;
     box-shadow: 2px 4px 4px rgba(155, 29, 79, 0.2);
 }
+#grid {
+    justify-content: start;
+}
+
 
 #grid_linha th {
     background-color: white;
@@ -92,3 +96,31 @@ button:hover {
     background-color: #f579ad;
 }
 
+form div {
+    margin-bottom: 15px;
+}
+form input[type="radio"] {
+    display: inline-block;
+    margin-right: 2px;
+}
+
+form label {
+    display: inline-block;
+    margin-right: 5px;
+    margin-top: 0;
+}
+
+form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #f5a5c6;
+    border-radius: 6px;
+    resize: vertical;
+    min-height: 100px;
+}
+
+form input:focus, form textarea:focus, form select:focus {
+    border-color: #ff4c8b;
+    outline: none;
+}

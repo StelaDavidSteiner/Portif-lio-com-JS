@@ -10,34 +10,34 @@
     <table class="estrutura_inicial">
         <tr class="estrutura_linha">
             <td class="estrutura_form">
-                <form method="post" onsubmit="contato.Enviar()">
+                <form action="" method="post" onsubmit="contato.Enviar(event)">
                     <div> 
                         <label for="nome" class="estrutura_lab">Nome:</label>
-                        <input type="text" name="nome" id="nome">
+                        <input type="text" name="nome" id="nome" minlength="3" maxlength="255" value="Padrao" required>
                     </div>
                     <div>
                         <label for="email">E-mail:</label>
-                        <input type="text" name="email" id="email">
+                        <input type="email" name="email" id="email" value="email@email.com" required>
                     </div>
                     <div>
                         <label for="fone"> Telefone de contato:</label>
-                        <input type="text" name="fone" id="fone">
+                        <input type="text" name="fone" id="fone" minlength="10" value="23412341234" maxlength="17" required>
                     </div>
                     <div>
                         <label for="mensagem">Escreva sua mensagem:</label>
-                        <textarea name="mensagem" id="mensagem" rows="5"></textarea>
+                        <textarea name="mensagem" id="mensagem" cols="85" rows="10" required> texto da mensagem </textarea>
                     </div>
                     <div>    
                         <label for="data_cadastro">Data de Cadastro:</label>
-                        <input type="date" name="data_cadastro" id="data_cadastro">
+                        <input type="date" name="data_cadastro" id="data_cadastro" value="2025-05-20">
                     </div>
                     <div>
-                        <label for="tipo_contato">Tipo de contato:</label>
-                        <input type="radio" name="tipo_contato" id="email" value="email">
+                        <label for="tipo_contato">Selecione como será contatado pelo marketing:</label>
+                        <input type="radio" name="tipo_contato" id="contato_email" value="Email">
                         <label for="email">E-mail</label>
-                        <input type="radio" name="tipo_contato" id="fone" value="fone">
+                        <input type="radio" name="tipo_contato" id="contato_telefone" value="Ligação">
                         <label for="fone">Telefone</label>
-                        <input type="radio" name="tipo_contato" id="whatsapp" value="whatsapp">
+                        <input type="radio" name="tipo_contato" id="contato_whatsapp" value="Whatsapp">
                         <label for="whatsapp">WhatsApp</label>
                     </div>
                     <div>
@@ -50,12 +50,12 @@
                 <table id="grid">
                     <thead>
                         <tr id="head_linha">
-                            <th id="h_nome">Nome</th>
-                            <th id="h_email">E-mail</th>
-                            <th id="h_fone">Telefone</th>
-                            <th id="h_mensagem">Mensagem</th>
-                            <th id="h_data_cadastro">Data_Cadastro</th>
-                            <th id="h_tipo_contato">Tipo_Contato</th>
+                            <th>Nome</th>
+                            <th>E-mail</th>
+                            <th>Telefone</th>
+                            <th>Mensagem</th>
+                            <th>Data_Cadastro</th>
+                            <th>Tipo_Contato</th>
                         </tr>
                     </thead>
                     <tbody id="dados">
