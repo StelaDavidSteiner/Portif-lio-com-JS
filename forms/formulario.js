@@ -104,11 +104,5 @@ class Contato {
 // Instanciar a classe
 let contato = new Contato(); 
 
-/*
-function submeter(){
-  var alerta = document.getElementById('nome').value;
-  alert('Aviso: '+ alerta);
-}
-*/
 
 
